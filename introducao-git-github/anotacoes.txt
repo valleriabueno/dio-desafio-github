@@ -1,12 +1,35 @@
 Introdução ao Git e Github
 
+ Git -> Sistema de controle de versionamento de arquivos. Desenvolvido po Linus Torvalds, em 2005.
+
+ Github -> Plataforma utilizada para gerenciar, hospedar códigos e arquivos e criar ambientes colaborativos.
+
 
 Links úteis
 
-
+- Instalação do Git
+  https://git-scm.com/download/win
 
 
 Principais comandos git bash
 
-- git init
-- git clone
+  Configurações iniciais:
+- git config --global user.email "email do github"
+- git config --global user.name "nome de usuário github"
+
+- Ctrl + L  -> limpar terminal
+- cd  -> navegação entre níveis de pastas
+- ls  -> lista arquivos dentro do diretório
+- ls -a  -> lista arquivos ocultos
+- mkdir nomedapasta -> criar uma pasta
+- mv nomedoarquivo.extensão ./nomedapasta/ -> mover arquivos dentro das pastas
+- echo > nomedoarquivo.extensão  -> criar um arquivo
+- git init  -> inicialização do repositório local (cria a pasta .git)
+
+- git clone https://github.com/valleriabueno/dio-desafio-github.git  -> o endereço do repositório muda de acordo com o repositório que se quer clonar
+- git status  -> status dos arquivos da pasta atual
+- git add .ou*  -> adiciona todos os arquivos novos/com alterações para serem comitados.
+- git add nomedoarquivo  -> adiciona apenas arquivos selecionados para o commit
+- git commit -m "Mensagem que descreve o que foi alterado"
+- git push origin main  -> Envia as atualizações para o Github
+- git pull  -> atualizar o repositório local sobre alterações realizadas no repositório do Github
