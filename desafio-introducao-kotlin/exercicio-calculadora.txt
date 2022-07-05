@@ -1,0 +1,30 @@
+Exercício - Introdução ao Kotlin
+--------------------------------
+
+Com os conhecimentos aplicados anteriormente, vamos criar uma calculadora que, dados dois
+valores Float? e um número correspondente à operação (constante), retorne e imprima o 
+resultado como Float ou uma mensagem de erro caso um dos valores seja nulo.
+
+
+
+Lógica aplicada em ambiente Kotlin Payground:
+
+fun main() {
+    
+    print(calculator(5f,3.14f,1))
+}
+
+fun calculator(n1:Float?, n2:Float?, op:Int):Float{
+      
+    when(op){
+        1 -> return n1!!.plus(n2!!)
+        2 -> return n1!!.minus(n2!!)
+        3 -> return n1!!.times(n2!!)
+        4 -> return n1!!.div(n2!!)
+        else -> throw Exception("Erro: Valores inseridos não podem ser calculados.")
+    	}  
+}
+
+-------------------------------------------------------------------------------------------
+
+A execução deste código resultará em 8.14 .
